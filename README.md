@@ -23,7 +23,6 @@ pip install -r requirements.txt
 ## Training 
 To fine-tune the YOLO11m model, run:
 ```bash
-jupyter nbconvert --to track_players_YOLO11.ipynb
 python track_players_YOLO11.py
 ```
 
