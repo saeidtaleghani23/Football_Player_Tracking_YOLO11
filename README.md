@@ -29,14 +29,14 @@ python track_players_YOLO11.py
 ## Results
 The output video containing the detected and tracked objects is saved as output_football.mp4. 
 Here are two videos demonstrating the object tracking:
-1. **Input Video:** [football.mp4](https://github.com/saeidtaleghani23/YOLO11_Object_Detection/football.mp4)  
+1. **Input Video:** [football.mp4](https://github.com/saeidtaleghani23/YOLO11_Object_Detection/blob/main/football.mp4)  
    <video width="320" height="240" controls>
-      <source src="https://github.com/saeidtaleghani23/YOLO11_Object_Detection/raw/main/football.mp4" type="video/mp4">
+      <source src="https://github.com/saeidtaleghani23/YOLO11_Object_Detection/blob/main/football.mp4" type="video/mp4">
       Your browser does not support the video tag.
    </video>
 
-2. **Output Video:** [output_football.mp4](https://github.com/saeidtaleghani23/YOLO11_Object_Detection/output_football.mp4)  
+2. **Output Video:** [output_football.mp4](https://github.com/saeidtaleghani23/YOLO11_Object_Detection/blob/main/output_football.mp4)  
    <video width="320" height="240" controls>
-      <source src="https://github.com/saeidtaleghani23/YOLO11_Object_Detection/raw/main/output_football.mp4" type="video/mp4">
+      <source src="https://github.com/saeidtaleghani23/YOLO11_Object_Detection/blob/main/output_football.mp4" type="video/mp4">
       Your browser does not support the video tag.
    </video>
