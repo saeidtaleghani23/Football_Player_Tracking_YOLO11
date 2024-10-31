@@ -1,6 +1,6 @@
 # Byte-compiled / optimized / DLL files
 datasets/
 yolo11m.pt
-football.mp4
+#football.mp4
 output_football.mp4
 runs/
