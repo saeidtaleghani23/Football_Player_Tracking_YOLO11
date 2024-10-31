@@ -19,11 +19,11 @@ To set up the project, clone this repository and install the required dependenci
 git clone https://github.com/saeidtaleghani23/YOLO11_Object_Detection.git
 cd YOLO11_Object_Detection
 pip install -r requirements.txt
-
+```
 ## Training 
 To fine-tune the YOLO11m model, run:
 ```bash
 jupyter nbconvert --to track_players_YOLO11.ipynb
 python track_players_YOLO11.py
-
+```
 
