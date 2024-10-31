@@ -26,3 +26,6 @@ To fine-tune the YOLO11m model, run:
 python track_players_YOLO11.py
 ```
 
+## Results
+The output video containing the detected and tracked objects is saved as output_football.mp4. 
+Here are two videos demonstrating the object tracking:
