@@ -5,11 +5,8 @@ This repository contains an implementation of object tracking using the YOLOv11 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Training](#training)
+- [Training and Testing ](#training)
 - [Results](#results)
-- [Videos](#videos)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -20,8 +17,8 @@ git clone https://github.com/saeidtaleghani23/YOLO11_Object_Detection.git
 cd YOLO11_Object_Detection
 pip install -r requirements.txt
 ```
-## Training 
-To fine-tune the YOLO11m model, run:
+## Training and Testing
+To fine-tune the YOLO11m model and test its performance on the football.mp4, run:
 ```bash
 python track_players_YOLO11.py
 ```
@@ -34,3 +31,13 @@ Here are two videos demonstrating the object tracking:
 2. **Output Video:** [output_football.mp4](https://github.com/saeidtaleghani23/YOLO11_Object_Detection/raw/main/output_football.mp4)
 
 You can click on the links above to view or download the videos.
+
+Here is some frames of the original video and the output video:
+
+Here are some frames of the original video and the output video:
+
+| Original Frames                   | Output Frames                      |
+|-----------------------------------|------------------------------------|
+| ![Original Frame 1](path/to/original_frame_1.jpg) | ![Output Frame 1](path/to/output_frame_1.jpg) |
+| ![Original Frame 2](path/to/original_frame_2.jpg) | ![Output Frame 2](path/to/output_frame_2.jpg) |
+| ![Original Frame 3](path/to/original_frame_3.jpg) | ![Output Frame 3](path/to/output_frame_3.jpg) |

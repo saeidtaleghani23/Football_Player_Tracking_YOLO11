@@ -141,12 +141,14 @@ def main():
     fps = int(cap.get(cv2.CAP_PROP_FPS))
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(OUTPUT_VIDEO_PATH, fourcc, fps, (frame_width, frame_height))
-
+    frame_count = 0  # Initialize frame counter
     while True:
         ret, frame = cap.read()
         if not ret:
             break
         start_time = time.perf_counter()
+        # Save the original frame before processing
+        original_frame = frame.copy()  # Make a copy of the original frame
         
         # Run detection and tracking
         detections = detection(trained_model, frame, confidence=0.7, allowed_classes=[1,2])
@@ -158,6 +160,18 @@ def main():
                         (int(bounding_box[2]), int(bounding_box[3])), (0, 0, 255), 2)
             cv2.putText(frame, f"{str(tracking_id)}", (int(bounding_box[0]), int(bounding_box[1] - 10)), 
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+        
+        # Save original frame and output frame as .jpg
+        if frame_count % 30 == 0:  # Change 30 to save every N frames
+            original_frame_path = f"{Home}/output_frames/original_frame_{frame_count}.jpg"
+            output_frame_path = f"{Home}/output_frames/output_frame_{frame_count}.jpg"
+            
+            # Create a directory to save the frames if it doesn't exist
+            os.makedirs(f"{Home}/output_frames", exist_ok=True)
+
+            # Save the original frame
+            cv2.imwrite(original_frame_path, original_frame)  # Save the output frame (with bounding boxes)
+            cv2.imwrite(output_frame_path, frame)  # Save the original frame
     
         # Save frame to output video
         out.write(frame)
@@ -166,6 +180,8 @@ def main():
         end_time = time.perf_counter()
         fps = 1 / (end_time - start_time)
         print(f"Current fps: {fps}")
+        
+        frame_count += 1  # Increment the frame count
 
     cap.release()
     out.release()
