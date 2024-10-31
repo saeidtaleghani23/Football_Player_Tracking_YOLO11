@@ -2,5 +2,5 @@
 datasets/
 yolo11m.pt
 #football.mp4
-output_football.mp4
+#output_football.mp4
 runs/
