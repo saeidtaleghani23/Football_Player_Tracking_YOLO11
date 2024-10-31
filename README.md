@@ -38,6 +38,6 @@ Here are some frames of the original video and the output video:
 
 | Original Frames                   | Output Frames                      |
 |-----------------------------------|------------------------------------|
-| ![Original Frame 1](path/to/original_frame_1.jpg) | ![Output Frame 1](path/to/output_frame_1.jpg) |
-| ![Original Frame 2](path/to/original_frame_2.jpg) | ![Output Frame 2](path/to/output_frame_2.jpg) |
-| ![Original Frame 3](path/to/original_frame_3.jpg) | ![Output Frame 3](path/to/output_frame_3.jpg) |
+| ![Original Frame 1](output_frames/original_frame_30.jpg) | ![Output Frame 1](output_frames/output_frame_30.jpg) |
+| ![Original Frame 2](output_frames/original_frame_60.jpg) | ![Output Frame 2](output_frames/output_frame_60.jpg) |
+| ![Original Frame 3](output_frames/original_frame_90.jpg) | ![Output Frame 3](output_frames/output_frame_90.jpg) |
